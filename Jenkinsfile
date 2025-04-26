@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "akshat6215/app"
+        DOCKER_IMAGE = "somyaagrawal/my-node-app"
         DOCKER_CREDENTIALS_ID = "dockerhub"
     }
 
@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Aksh6215/app.git'
+                    url: 'https://github.com/somyaagarwal20/jenkins_pipleine'
             }
         }
 
